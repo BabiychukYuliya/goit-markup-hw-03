@@ -41,9 +41,7 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
 }
 
 .link {
@@ -52,7 +50,7 @@ img {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -63,9 +61,12 @@ img {
   background-color: var(--light-txt-cl);
 }
 
+/* Нижня рамка хедера */
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
+  padding-left: 215px;
 }
 
 /* Лого */
@@ -119,10 +120,18 @@ img {
 
 /* Секція Hero */
 .section-hero {
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--secondary-bc-cl);
 }
 
 .hero-title {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -134,7 +143,7 @@ img {
 
 .hero-btn {
   width: 216px;
-  min-height: 30px;
+  height: 50px;
   padding: 0;
   border-radius: 4px;
   border: none;
@@ -158,6 +167,8 @@ img {
 }
 
 .section-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -166,6 +177,8 @@ img {
 }
 
 .credo-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -173,7 +186,16 @@ img {
   color: var(--bold-txt-cl);
 }
 
+.credo-item {
+  width: 270px;
+}
+
+.section-team {
+  margin-top: 94px;
+}
 .team-item {
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -182,6 +204,7 @@ img {
 }
 
 .team-post {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -216,6 +239,16 @@ img {
   color: var(--light-txt-cl);
 }
 
+.list-noflex {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 /* Для сторінки Портфоліо */
 .filtr-btn:hover,
 .filtr-btn:focus {
@@ -223,6 +256,9 @@ img {
 }
 
 .filtr-btn {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-bc-cl);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -233,6 +269,8 @@ img {
 }
 
 .title-work {
+  padding-top: 20px;
+  padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -246,10 +284,32 @@ img {
 }
 
 .elements {
-  width: 380px;
+  width: 370px;
 }
 
-.elements:nth-child(3n) {
-  margin-right: 0;
-  background-color: aqua;
+.portfolio-btn {
+  padding-top: 94px;
+}
+
+.list-btn {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 56px;
+}
+
+.list-gallary {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.gallary-border {
+  border: 1px solid #eeeeee;
 }
