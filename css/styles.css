@@ -44,6 +44,14 @@ img {
   gap: 30px;
 }
 
+.list-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}
+
 .link {
   color: currentColor;
   text-decoration: none;
@@ -65,7 +73,6 @@ img {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
-  padding-left: 215px;
 }
 
 /* Лого */
@@ -84,6 +91,8 @@ img {
 .nav-item .link:hover,
 .nav-item .link:focus {
   color: var(--accent-txt-cl);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 /* Виділення поточної сторінки кольором */
@@ -91,9 +100,6 @@ img {
   color: var(--accent-txt-cl);
 }
 
-.nav-item:not(:last-child) {
-  margin-right: 50px;
-}
 .nav-item {
   display: block;
   padding-top: 32px;
@@ -118,8 +124,7 @@ img {
 
 /* Секція Hero */
 .section-hero {
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--secondary-bc-cl);
@@ -164,9 +169,12 @@ img {
   color: var(--main-txt-cl);
 }
 
-.section-title {
+.section-credo {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
+}
+.section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -175,8 +183,7 @@ img {
 }
 
 .credo-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -190,10 +197,11 @@ img {
 
 .section-team {
   margin-top: 94px;
+  margin-bottom: 94px;
+  background-color: var(--primary-bc-cl);
 }
 .team-item {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -202,7 +210,6 @@ img {
 }
 
 .team-post {
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -212,9 +219,13 @@ img {
 
 .footer {
   background-color: var(--secondary-bc-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .location {
+  margin-top: 20px;
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -226,6 +237,10 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer :hover,
@@ -243,10 +258,6 @@ img {
   padding: 0;
 }
 
-.container-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 /* Для сторінки Портфоліо */
 .filtr-btn:hover,
 .filtr-btn:focus {
@@ -267,8 +278,7 @@ img {
 }
 
 .title-work {
-  padding-top: 20px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -277,15 +287,13 @@ img {
 }
 
 .txt-work {
-  font-size: 16px;
-  line-height: 1.88;
 }
 
 .elements {
   width: 370px;
 }
 
-.portfolio-btn {
+.section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -295,9 +303,9 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 30px;
+  gap: 8px;
   justify-content: center;
-  padding-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .list-gallary {
@@ -310,5 +318,11 @@ img {
 }
 
 .gallary-border {
-  border: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
