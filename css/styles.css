@@ -91,10 +91,17 @@ img {
 .nav-item .link:hover,
 .nav-item .link:focus {
   color: var(--accent-txt-cl);
-  padding-top: 25px;
+}
+
+.header-item {
+  padding-top: 24px;
   padding-bottom: 25px;
 }
 
+.header-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 /* Виділення поточної сторінки кольором */
 .nav-item .link.current {
   color: var(--accent-txt-cl);
